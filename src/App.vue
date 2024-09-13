@@ -1,6 +1,20 @@
 <template>
   <div>lost-ui init</div>
-  <Button type="primary" plain disabled ref="buttonRef">Test Button</Button>
+  <Button type="primary" plain ref="buttonRef">Test Button</Button>
+  <Button plain>Test Button</Button>
+  <Button round>Test Button</Button>
+  <Button circle>Test Button</Button>
+  <Button disabled>Test Button</Button>
+  <Button type="primary">Test Button</Button>
+  <Button type="success">Test Button</Button>
+  <Button type="info">Test Button</Button>
+  <Button type="warning">Test Button</Button>
+  <Button type="danger">Test Button</Button>
+  <Button type="primary" plain>Test Button</Button>
+  <Button type="success" plain>Test Button</Button>
+  <Button type="info" plain>Test Button</Button>
+  <Button type="warning" plain>Test Button</Button>
+  <Button type="danger" plain>Test Button</Button>
 </template>
 
 <script setup lang="ts">
@@ -15,31 +29,4 @@ onMounted(() => {
 })
 </script>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+<style scoped></style>

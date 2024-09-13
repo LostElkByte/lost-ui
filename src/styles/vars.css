@@ -1,0 +1,90 @@
+:root {
+  /* 基础颜色 */
+  --l-color-white: #ffffff; /* 白色，用于文本或背景 */
+  --l-color-black: #000000; /* 黑色，用于文本或背景 */
+
+  /* 主题色配置 */
+  --colors: (
+    primary: #409eff, /* 主要色，通常用于主按钮或突出元素 */
+    success: #67c23a, /* 成功提示颜色 */
+    warning: #e6a23c, /* 警告提示颜色 */
+    danger: #f56c6c, /* 错误或危险提示颜色 */
+    info: #909399 /* 信息提示颜色 */
+  );
+
+  /* 循环生成每种主题色的浅色和深色，适合渐变或 hover 效果 */
+  @each $val, $color in var(--colors) {
+    --l-color-$(val): $(color);
+    @for $i from 3 to 9 by 2 {
+      --l-color-$(val)-light-$(i): mix(#fff, $(color), .$(i))  /* 更浅的颜色 */
+    }
+    --l-color-$(val)-light-8: mix(#fff, $(color), .8); /* 特定深度的浅色 */
+    --l-color-$(val)-dark-2: mix(#000, $(color), .2); /* 较深的颜色 */
+  }
+
+  /* 背景色配置 */
+  --l-bg-color: #ffffff; /* 默认背景色 */
+  --l-bg-color-page: #f2f3f5; /* 页面背景色 */
+  --l-bg-color-overlay: #ffffff; /* 弹出层背景色 */
+  
+  /* 文本颜色配置 */
+  --l-text-color-primary: #303133; /* 主要文本颜色 */
+  --l-text-color-regular: #606266; /* 常规文本颜色 */
+  --l-text-color-secondary: #909399; /* 次要文本颜色 */
+  --l-text-color-placeholder: #a8abb2; /* 占位符文本颜色 */
+  --l-text-color-disabled: #c0c4cc; /* 禁用状态下的文本颜色 */
+
+  /* 边框颜色配置 */
+  --l-border-color: #dcdfe6; /* 默认边框颜色 */
+  --l-border-color-light: #e4e7ed; /* 较浅的边框颜色 */
+  --l-border-color-lighter: #ebeef5; /* 更浅的边框颜色 */
+  --l-border-color-extra-light: #f2f6fc; /* 极浅的边框颜色 */
+  --l-border-color-dark: #d4d7de; /* 较深的边框颜色 */
+  --l-border-color-darker: #cdd0d6; /* 更深的边框颜色 */
+
+  /* 填充颜色配置 */
+  --l-fill-color: #f0f2f5; /* 默认填充颜色 */
+  --l-fill-color-light: #f5f7fa; /* 浅色填充 */
+  --l-fill-color-lighter: #fafafa; /* 更浅的填充 */
+  --l-fill-color-extra-light: #fafcff; /* 极浅的填充 */
+  --l-fill-color-dark: #ebedf0; /* 深色填充 */
+  --l-fill-color-darker: #e6e8eb; /* 更深的填充 */
+  --l-fill-color-blank: #ffffff; /* 空白填充 */
+
+  /* 边框样式 */
+  --l-border-width: 1px; /* 边框宽度 */
+  --l-border-style: solid; /* 边框样式 */
+  --l-border-color-hover: var(--l-text-color-disabled); /* 悬停时的边框颜色 */
+  --l-border: var(--l-border-width) var(--l-border-style) var(--l-border-color); /* 完整边框定义 */
+  
+  /* 圆角配置 */
+  --l-border-radius-base: 4px; /* 基础圆角 */
+  --l-border-radius-small: 2px; /* 小圆角 */
+  --l-border-radius-round: 20px; /* 圆形圆角 */
+  --l-border-radius-circle: 100%; /* 完全圆形 */
+
+  /* 字体配置 */
+  --l-font-size-extra-large: 20px; /* 超大字体 */
+  --l-font-size-large: 18px; /* 大字体 */
+  --l-font-size-medium: 16px; /* 中等字体 */
+  --l-font-size-base: 14px; /* 基础字体 */
+  --l-font-size-small: 13px; /* 小字体 */
+  --l-font-size-extra-small: 12px; /* 超小字体 */
+  --l-font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif; /* 字体家族 */
+  --l-font-weight-primary: 500; /* 主要字体粗细 */
+
+  /* 禁用状态 */
+  --l-disabled-bg-color: var(--l-fill-color-light); /* 禁用状态下的背景色 */
+  --l-disabled-text-color: var(--l-text-color-placeholder); /* 禁用状态下的文本颜色 */
+  --l-disabled-border-color: var(--l-border-color-light); /* 禁用状态下的边框颜色 */
+  
+  /* 动画配置 */
+  --l-transition-duration: .3s; /* 动画持续时间 */
+  --l-transition-duration-fast: .2s; /* 快速动画持续时间 */
+
+  /* 阴影样式 */
+  --l-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, .04), 0px 8px 20px rgba(0, 0, 0, .08); /* 默认阴影 */
+  --l-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, .12); /* 浅阴影 */
+  --l-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, .12); /* 更浅的阴影 */
+  --l-box-shadow-dark: 0px 16px 48px 16px rgba(0, 0, 0, .08), 0px 12px 32px rgba(0, 0, 0, .12), 0px 8px 16px -8px rgba(0, 0, 0, .16); /* 深阴影 */
+}
