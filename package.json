@@ -21,6 +21,7 @@
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
+    "@types/lodash-es": "^4.17.12",
     "@types/node": "^20.14.5",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
@@ -30,6 +31,7 @@
     "cz-customizable": "7.2.1",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
+    "lodash-es": "^4.17.21",
     "npm-run-all2": "^6.2.0",
     "postcss-color-mix": "^1.1.0",
     "postcss-each": "^1.1.0",
