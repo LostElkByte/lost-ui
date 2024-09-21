@@ -15,7 +15,7 @@
       @click="handleClick"
     >
       <slot name="title">{{ title }}</slot>
-      <!-- <Icon icon="angle-right" class="header-angle" /> -->
+      <Icon icon="angle-right" class="header-angle" />
     </div>
     <Transition name="slide" v-on="transitionEvents">
       <div class="l-collapse-item__wrapper" v-show="isActive">
@@ -29,8 +29,10 @@
 
 <script lang="ts" setup>
 import { inject, computed } from 'vue'
+import Icon from '../Icon/Icon.vue'
 import type { CollapseItemProps } from './types.ts'
 import { collapseContextKey } from './types.ts'
+
 defineOptions({
   name: 'LCollapseItem'
 })

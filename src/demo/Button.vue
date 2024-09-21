@@ -15,6 +15,8 @@
     <Button type="info" plain>Test Button</Button>
     <Button type="warning" plain>Test Button</Button>
     <Button type="danger" plain>Test Button</Button>
+    <Button size="small" loading>Loading</Button>
+    <Button size="small" icon="arrow-up">Icon</Button><br />
   </div>
 </template>
 
