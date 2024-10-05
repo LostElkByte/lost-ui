@@ -32,6 +32,7 @@
     "cz-customizable": "7.2.1",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
+    "jsdom": "^25.0.1",
     "lodash-es": "^4.17.21",
     "npm-run-all2": "^6.2.0",
     "postcss-color-mix": "^1.1.0",
