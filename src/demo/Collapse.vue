@@ -12,7 +12,6 @@
         <div>this is cccc test</div>
       </Item>
     </Collapse>
-    {{ openedValue }}
   </div>
 </template>
 
