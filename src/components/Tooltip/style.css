@@ -1,0 +1,82 @@
+.l-tooltip {
+  --l-popover-bg-color: var(--l-bg-color-overlay);
+  --l-popover-font-size: var(--l-font-size-base);
+  --l-popover-border-color: var(--l-border-color);
+  --l-popover-padding: 12px;
+  --l-popover-border-radius: 4px;
+  display: inline-block;
+}
+
+.l-tooltip {
+  .l-tooltip__popper {
+    background: var(--l-popover-bg-color);
+    border-radius: var(--l-popover-border-radius);
+    border: 1px solid var(--l-popover-border-color);
+    padding: var(--l-popover-padding);
+    color: var(--l-text-color-regular);
+    line-height: 1.4;
+    text-align: justify;
+    font-size: var(--l-popover-font-size);
+    box-shadow: var(--l-box-shadow-light);
+    word-break: break-all;
+    box-sizing: border-box;
+    z-index: 1000;
+    #arrow,
+    #arrow::before {
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      box-sizing: border-box;
+      background: var(--l-popover-bg-color);
+    }
+    #arrow {
+      visibility: hidden;
+    }
+    #arrow::before {
+      visibility: visible;
+      content: '';
+      transform: rotate(45deg);
+    }
+    &[data-popper-placement^='top'] > #arrow {
+      bottom: -5px;
+    }
+
+    &[data-popper-placement^='bottom'] > #arrow {
+      top: -5px;
+    }
+
+    &[data-popper-placement^='left'] > #arrow {
+      right: -5px;
+    }
+
+    &[data-popper-placement^='right'] > #arrow {
+      left: -5px;
+    }
+    &[data-popper-placement^='top'] > #arrow::before {
+      border-right: 1px solid var(--l-popover-border-color);
+      border-bottom: 1px solid var(--l-popover-border-color);
+    }
+    &[data-popper-placement^='bottom'] > #arrow::before {
+      border-left: 1px solid var(--l-popover-border-color);
+      border-top: 1px solid var(--l-popover-border-color);
+    }
+    &[data-popper-placement^='left'] > #arrow::before {
+      border-right: 1px solid var(--l-popover-border-color);
+      border-top: 1px solid var(--l-popover-border-color);
+    }
+    &[data-popper-placement^='right'] > #arrow::before {
+      border-left: 1px solid var(--l-popover-border-color);
+      border-bottom: 1px solid var(--l-popover-border-color);
+    }
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity var(--l-transition-duration);
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
+  }
+}

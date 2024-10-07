@@ -4,6 +4,7 @@
     <CollapseDemo></CollapseDemo>
     <Alert></Alert>
     <FontAwesomeIcon :icon="['fas', 'download']" />
+    <Tooltip></Tooltip>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import ButtonDemo from '@/demo/Button.vue'
 import CollapseDemo from '@/demo/Collapse.vue'
 import Alert from '@/demo/Alert.vue'
+import Tooltip from '@/demo/Tooltip.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
 

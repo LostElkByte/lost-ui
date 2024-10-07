@@ -22,11 +22,7 @@ import Item from '@/components/Collapse/CollapseItem.vue'
 
 const openedValue = ref(['a'])
 
-onMounted(() => {
-  setTimeout(() => {
-    openedValue.value = ['a', 'b']
-  }, 2000)
-})
+onMounted(() => {})
 </script>
 
 <style scoped>
