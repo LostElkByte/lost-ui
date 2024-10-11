@@ -5,7 +5,7 @@ import type { MenuOption } from './types'
 import Tooltip from '../Tooltip/Tooltip.vue'
 import type { TooltipInstance } from '../Tooltip/types'
 export default defineComponent({
-  name: 'VkDropdown',
+  name: 'LDropdown',
   props: {
     placement: {
       type: String as PropType<Placement>,
@@ -25,10 +25,10 @@ export default defineComponent({
     },
     closeDelay: {
       type: Number,
-      default: 0,
+      default: 0
     },
     popperOptions: {
-      type: Object as PropType<Options>,
+      type: Object as PropType<Options>
     },
     menuOptions: {
       type: Array as PropType<MenuOption[]>,
@@ -54,20 +54,24 @@ export default defineComponent({
         tooltipRef.value?.hide()
       }
     }
-    const visibleChange = (e:boolean) => {
+    const visibleChange = (e: boolean) => {
       emit('visible-change', e)
     }
     const options = computed(() => {
-      return props.menuOptions.map(item => {
+      return props.menuOptions.map((item) => {
         return (
           <Fragment key={item.key}>
-            { item.divided ? <li role="separator" class="divided-placeholder"/> : '' }
-            <li 
-              class={{'vk-dropdown__item': true, 'is-disabled': item.disabled, 'is-divided': item.divided }}
+            {item.divided ? <li role="separator" class="divided-placeholder" /> : ''}
+            <li
+              class={{
+                'l-dropdown__item': true,
+                'is-disabled': item.disabled,
+                'is-divided': item.divided
+              }}
               id={`dropdown-item-${item.key}`}
               onClick={() => itemClick(item)}
             >
-              { item.label }
+              {item.label}
             </li>
           </Fragment>
         )
@@ -78,26 +82,20 @@ export default defineComponent({
       hide: () => tooltipRef.value?.hide()
     })
     return () => (
-      <div
-        class="vk-dropdown"
-      >
-        <Tooltip 
-          trigger={props.trigger} 
+      <div class="l-dropdown">
+        <Tooltip
+          trigger={props.trigger}
           placement={props.placement}
           popperOptions={props.popperOptions}
           openDelay={props.openDelay}
           closeDelay={props.closeDelay}
           manual={props.manual}
           ref={tooltipRef}
-          onVisibleChange={visibleChange}
+          onVisible-change={visibleChange}
         >
           {{
             default: () => slots.default && slots.default(),
-            content: () => (
-              <ul class="vk-dropdown__menu">
-                { options.value }
-              </ul>
-            )
+            content: () => <ul class="l-dropdown__menu">{options.value}</ul>
           }}
         </Tooltip>
       </div>
