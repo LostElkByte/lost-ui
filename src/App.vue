@@ -6,6 +6,7 @@
     <FontAwesomeIcon :icon="['fas', 'download']" />
     <Tooltip></Tooltip>
     <Dropdown></Dropdown>
+    <Message></Message>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import CollapseDemo from '@/demo/Collapse.vue'
 import Alert from '@/demo/Alert.vue'
 import Tooltip from '@/demo/Tooltip.vue'
 import Dropdown from '@/demo/Dropdown.vue'
+import Message from '@/demo/Message.vue'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 </script>
 
