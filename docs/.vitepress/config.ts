@@ -30,8 +30,8 @@ export default defineConfig({
         items: [
           { text: 'Button 按钮', link: '/components/button' },
           { text: 'Alert 警告', link: '/components/alert' },
-          { text: 'Collapse 折叠面板', link: '/components/collapse' }
-          // { text: 'Tooltip 文字提示', link: '/components/tooltip' },
+          { text: 'Collapse 折叠面板', link: '/components/collapse' },
+          { text: 'Tooltip 文字提示', link: '/components/tooltip' }
           // { text: 'Dropdown 下拉菜单', link: '/components/dropdown' },
           // { text: 'Message 消息', link: '/components/message' },
           // { text: 'Notification 提示', link: '/components/notification' },
