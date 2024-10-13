@@ -31,9 +31,9 @@ export default defineConfig({
       {
         text: 'Lost 组件列表',
         items: [
-          { text: 'Button 按钮', link: '/components/button' }
+          { text: 'Button 按钮', link: '/components/button' },
           // { text: 'Alert 警告', link: '/components/alert' },
-          // { text: 'Collapse 折叠面板', link: '/components/collapse' },
+          { text: 'Collapse 折叠面板', link: '/components/collapse' }
           // { text: 'Tooltip 文字提示', link: '/components/tooltip' },
           // { text: 'Dropdown 下拉菜单', link: '/components/dropdown' },
           // { text: 'Message 消息', link: '/components/message' },

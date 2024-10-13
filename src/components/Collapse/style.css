@@ -11,6 +11,7 @@
   --l-collapse-disabled-border-color: var(--l-border-color-lighter);
   border-top: 1px solid var(--l-collapse-border-color);
   border-bottom: 1px solid var(--l-collapse-border-color);
+  width: 100%;
 }
 .l-collapse-item__header {
   display: flex;
