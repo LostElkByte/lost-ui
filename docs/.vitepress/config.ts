@@ -4,7 +4,7 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import { containerPreview, componentPreview } from '@vitepress-demo-preview/plugin'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: 'Lost',
+  title: 'Lost-UI',
   description: '基于 Vue 3，面向设计师和开发者的组件库',
   vite: {
     plugins: [vueJsx() as any],
@@ -22,17 +22,14 @@ export default defineConfig({
   },
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    nav: [{ text: '组件', link: '/markdown-examples' }],
 
     sidebar: [
       {
         text: 'Lost 组件列表',
         items: [
           { text: 'Button 按钮', link: '/components/button' },
-          // { text: 'Alert 警告', link: '/components/alert' },
+          { text: 'Alert 警告', link: '/components/alert' },
           { text: 'Collapse 折叠面板', link: '/components/collapse' }
           // { text: 'Tooltip 文字提示', link: '/components/tooltip' },
           // { text: 'Dropdown 下拉菜单', link: '/components/dropdown' },
