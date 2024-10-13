@@ -1,6 +1,6 @@
 ---
-title: Tooltip 文字提示 | V-Element
-description: Tooltip 组件的文档
+title: Tooltip 文字提示
+description: 常用于展示鼠标 hover 时的提示信息。
 ---
 
 # Tooltip 文字提示
