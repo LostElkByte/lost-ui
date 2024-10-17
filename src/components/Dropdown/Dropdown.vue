@@ -36,7 +36,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import Tooltip from '../Tooltip/Tooltip.vue'
-import RenderVnode from '../Common/RenderVnode.ts'
+import RenderVnode from '../Common/RenderVnode'
 import type { DropdownProps, DropdownInstance, DropdownEmits, MenuOption } from './types'
 import type { TooltipInstance } from '../Tooltip/types'
 defineOptions({
