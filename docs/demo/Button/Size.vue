@@ -8,3 +8,11 @@ import LButton from '@/components/Button/Button.vue'
     <l-button type="success" size="small"> Small </l-button>
   </div>
 </template>
+
+<style scoped>
+.block {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+}
+</style>

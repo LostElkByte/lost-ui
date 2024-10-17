@@ -39,7 +39,7 @@ import Icon from '@/components/Icon/Icon.vue'
     <l-button type="info" circle> <Icon icon="star" /> </l-button>
   </div>
 </template>
-<style>
+<style scoped>
 .block {
   margin-bottom: 10px;
   display: flex;

@@ -20,3 +20,11 @@ import LButton from '@/components/Button/Button.vue'
     <l-button type="info" plain disabled> Info </l-button>
   </div>
 </template>
+
+<style scoped>
+.block {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 8px;
+}
+</style>

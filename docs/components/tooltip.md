@@ -41,16 +41,16 @@ Tooltip 组件常用于在鼠标悬停或点击时展示提示信息，适合用
 
 ### Attributes
 
-| 属性名         | 说明                                                 | 类型                                                                                                                                                                        | 默认值 |
-| -------------- | ---------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
-| content        | 提示框展示的内容，可通过 `slot#content` 插槽覆盖     | ^[string]                                                                                                                                                                   | ''     |
-| placement      | 提示框位置                                           | ^[enum]`'top' \| 'top-start' \| 'top-end' \| 'bottom' \| 'bottom-start' \| 'bottom-end' \| 'left' \| 'left-start' \| 'left-end' \| 'right' \| 'right-start' \| 'right-end'` | bottom |
-| popper-options | [popper.js](https://popper.js.org/docs/v2/) 参数设置 | ^[object] 参考 [popper.js](https://popper.js.org/docs/v2/) 文档                                                                                                             | {}     |
-| open-delay     | 提示框显示的延迟时间（毫秒）                         | ^[number]                                                                                                                                                                   | 0      |
-| close-delay    | 提示框消失的延迟时间（毫秒）                         | ^[number]                                                                                                                                                                   | 200    |
-| trigger        | 触发提示框的方式，可选值为 `hover` 或 `click`        | ^[enum]`'hover' \| 'click'`                                                                                                                                                 | hover  |
-| manual         | 是否开启手动触发模式                                 | ^[boolean]                                                                                                                                                                  | false  |
-| transition     | 自定义过渡动画名称                                   | ^[string]                                                                                                                                                                   | ''     |
+| 属性名         | 说明                                                 | 类型                                                                                                                                                                 | 默认值 |
+| -------------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| content        | 提示框展示的内容，可通过 `slot#content` 插槽覆盖     | `string`                                                                                                                                                             | ''     |
+| placement      | 提示框位置                                           | `'top' \| 'top-start' \| 'top-end' \| 'bottom' \| 'bottom-start' \| 'bottom-end' \| 'left' \| 'left-start' \| 'left-end' \| 'right' \| 'right-start' \| 'right-end'` | bottom |
+| popper-options | [popper.js](https://popper.js.org/docs/v2/) 参数设置 | `object` 参考 [popper.js](https://popper.js.org/docs/v2/) 文档                                                                                                       | {}     |
+| open-delay     | 提示框显示的延迟时间（毫秒）                         | `number`                                                                                                                                                             | 0      |
+| close-delay    | 提示框消失的延迟时间（毫秒）                         | `number`                                                                                                                                                             | 200    |
+| trigger        | 触发提示框的方式，可选值为 `hover` 或 `click`        | `enum`'hover' \| 'click'`                                                                                                                                            | hover  |
+| manual         | 是否开启手动触发模式                                 | `boolean`                                                                                                                                                            | false  |
+| transition     | 自定义过渡动画名称                                   | `string`                                                                                                                                                             | ''     |
 
 ### Events
 
@@ -68,7 +68,7 @@ Tooltip 组件常用于在鼠标悬停或点击时展示提示信息，适合用
 
 ### Exposes
 
-| 方法名 | 说明             | 参数                                              |
-| ------ | ---------------- | ------------------------------------------------- |
-| show   | 手动显示 Tooltip | ^[Function]`(event?: Event \| undefined) => void` |
-| hide   | 手动隐藏 Tooltip | ^[Function]`(event?: Event \| undefined) => void` |
+| 方法名 | 说明             | 参数                                   |
+| ------ | ---------------- | -------------------------------------- |
+| show   | 手动显示 Tooltip | `(event?: Event \| undefined) => void` |
+| hide   | 手动隐藏 Tooltip | `(event?: Event \| undefined) => void` |

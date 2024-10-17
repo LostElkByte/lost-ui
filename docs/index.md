@@ -5,20 +5,20 @@ layout: home
 hero:
   name: 'Lost-UI'
   text: '基于 Vue 3，面向设计师和开发者的组件库'
-  tagline: My great project tagline
+  tagline: '简化开发流程，提高设计效率'
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: '安装指南'
+      link: /guide
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: '组件'
+      link: /components
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: '高性能'
+    details: '通过优化的渲染机制，Lost-UI 提供流畅的用户体验，确保应用的快速响应。'
+  - title: '易于使用'
+    details: '直观的 API 设计，让开发者能够快速上手，无需复杂的配置。'
+  - title: '丰富的组件'
+    details: '涵盖多种常用组件，满足设计师和开发者在不同场景下的需求。'
 ---
