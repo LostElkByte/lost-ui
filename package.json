@@ -6,6 +6,9 @@
   "files": [
     "dist"
   ],
+  "sideEffects": [
+    "dist/index.css"
+  ],
   "main": "./dist/umd/lost-ui.umd.cjs",
   "module": "./dist/es/lost-ui.js",
   "types": "./dist/types/index.d.ts",
