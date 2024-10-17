@@ -1,39 +1,34 @@
-# lost-ui
+<div align="center">
+  <h1>Lost UI</h1>
+</div>
 
-This template should help get you started developing with Vue 3 in Vite.
+<p align="center">
+  <a href="https://www.npmjs.com/package/@lostelk/lost-ui">
+    <img src="https://img.shields.io/npm/v/@lostelk/lost-ui?color=blue" />
+  </a>
+  <a href="https://github.com/LostElkByte/lost-ui/issues">
+    <img src="https://img.shields.io/github/issues/LostElkByte/lost-ui" />
+  </a>
+  <a href="https://www.npmjs.com/package/@lostelk/lost-ui">
+    <img src="https://img.shields.io/npm/dt/@lostelk/lost-ui" />
+  </a>
+  <img src="https://img.shields.io/bundlejs/size/@lostelk/lost-ui" />
+  <a href="http://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/npm/l/@lostelk/lost-ui" />
+  </a>
+</p>
 
-## Recommended IDE Setup
+<div align="center">
+  <h2>Lost UI - Vue 3 UI 库 🦌</h2>
+</div>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Type Support for `.vue` Imports in TS
+🐳 Vue 3 Composition API
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+🔥 用 TypeScript 编写
 
-## Customize configuration
+⚠️ Lost UI 仍在实验阶段
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## 入门
 
-## Project Setup
-
-```sh
-pnpm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
+Hi，如果您想更好的使用 Lost UI，您来对地方了。对于希望使用 Lost UI 开发网站的开发人员，请访问我们的[入门指南](https://lostelkbyte.github.io/lost-ui/)。

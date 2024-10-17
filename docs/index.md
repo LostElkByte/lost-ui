@@ -5,7 +5,7 @@ layout: home
 hero:
   name: 'Lost-UI'
   text: '基于 Vue 3，面向设计师和开发者的组件库'
-  tagline: '简化开发流程，提高设计效率'
+  tagline: 'Lost UI 仍在开发实验阶段'
   actions:
     - theme: brand
       text: '安装指南'
