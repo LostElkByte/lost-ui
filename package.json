@@ -1,6 +1,6 @@
 {
-  "name": "lost-ui",
-  "version": "1.0.0",
+  "name": "@lostelk/lost-ui",
+  "version": "1.0.0-alpha.2",
   "private": false,
   "description": "A component library for Vue 3.",
   "repository": {
