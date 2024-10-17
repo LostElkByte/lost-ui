@@ -38,7 +38,14 @@ export default defineConfig({
         '@fortawesome/vue-fontawesome',
         '@popperjs/core'
       ],
-      output: {}
+      output: {
+        assetFileNames(chunkInfo) {
+          if (chunkInfo.name === 'style.css') {
+            return 'index.css'
+          }
+          return chunkInfo.name as string
+        }
+      }
     }
   }
 })

@@ -23,7 +23,7 @@ const components = [
 ]
 const install = (app: any) => {
   components.map((component) => {
-    app.use(component)
+    app.component(component.name, component)
   })
 }
 export {

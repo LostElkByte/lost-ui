@@ -12,16 +12,22 @@
   "exports": {
     ".": {
       "import": "./dist/es/lost-ui.js",
-      "require": "./dist/umd/lost-ui.umd.cjs"
+      "require": "./dist/umd/lost-ui.umd.cjs",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./dist/": {
+      "import": "./dist/",
+      "require": "./dist/"
     }
   },
   "scripts": {
     "dev": "vite",
-    "build": "run-p build-umd build-es",
+    "build": "npm run build-only && npm run move-style",
     "preview": "vite preview",
-    "build-only": "vite build",
+    "build-only": "run-p build-umd build-es",
     "build-umd": "vite build --config vite.umd.config.ts",
     "build-es": "vite build --config vite.es.config.ts",
+    "move-style": "move-file dist/es/index.css dist/index.css",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "format": "prettier --write src/",
@@ -54,6 +60,7 @@
     "eslint-plugin-vue": "^9.23.0",
     "jsdom": "^25.0.1",
     "lodash-es": "^4.17.21",
+    "move-file-cli": "^3.0.0",
     "npm-run-all2": "^6.2.0",
     "postcss-color-mix": "^1.1.0",
     "postcss-each": "^1.1.0",
