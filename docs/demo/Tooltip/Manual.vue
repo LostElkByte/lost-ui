@@ -1,7 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import LTooltip from '@/components/Tooltip/Tooltip.vue'
-import LButton from '@/components/Button/Button.vue'
 
 const tooltipRef = ref()
 const open = () => {

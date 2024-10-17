@@ -1,7 +1,5 @@
 <script setup>
 import { ref } from 'vue'
-import LCollapse from '@/components/Collapse/Collapse.vue'
-import LCollapseItem from '@/components/Collapse/CollapseItem.vue'
 const openedValue = ref(['a'])
 </script>
 <template>

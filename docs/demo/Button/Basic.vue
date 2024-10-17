@@ -1,7 +1,3 @@
-<script setup>
-import LButton from '@/components/button/button.vue'
-import Icon from '@/components/Icon/Icon.vue'
-</script>
 <template>
   <div class="basic block">
     <l-button> hello </l-button>
@@ -31,12 +27,12 @@ import Icon from '@/components/Icon/Icon.vue'
   </div>
 
   <div class="circle block">
-    <l-button circle> <Icon icon="star" /> </l-button>
-    <l-button type="primary" circle> <Icon icon="star" /> </l-button>
-    <l-button type="success" circle> <Icon icon="star" /> </l-button>
-    <l-button type="warning" circle> <Icon icon="star" /> </l-button>
-    <l-button type="danger" circle> <Icon icon="star" /> </l-button>
-    <l-button type="info" circle> <Icon icon="star" /> </l-button>
+    <l-button circle> <l-icon icon="star" /> </l-button>
+    <l-button type="primary" circle> <l-icon icon="star" /> </l-button>
+    <l-button type="success" circle> <l-icon icon="star" /> </l-button>
+    <l-button type="warning" circle> <l-icon icon="star" /> </l-button>
+    <l-button type="danger" circle> <l-icon icon="star" /> </l-button>
+    <l-button type="info" circle> <l-icon icon="star" /> </l-button>
   </div>
 </template>
 <style scoped>

@@ -1,13 +1,13 @@
 <script setup>
-import { createMessage, closeAll } from '@/components/Message/method'
-import LButton from '@/components/Button/Button.vue'
+import { createMessage, closeMessageAll } from 'lost-ui'
+
 const open = () => {
   createMessage({ message: 'hello world1', duration: 0 })
   createMessage({ message: 'hello world2', duration: 0 })
   createMessage({ message: 'hello world3', duration: 0 })
 }
 const close = () => {
-  closeAll()
+  closeMessageAll()
 }
 </script>
 <template>

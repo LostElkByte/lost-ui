@@ -1,6 +1,3 @@
-<script setup>
-import LButton from '@/components/Button/Button.vue'
-</script>
 <template>
   <div class="disabled block">
     <l-button disabled> hello </l-button>

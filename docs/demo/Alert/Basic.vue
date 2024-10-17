@@ -1,6 +1,3 @@
-<script setup>
-import LAlert from '@/components/Alert/Alert.vue'
-</script>
 <template>
   <div class="basic block">
     <l-alert type="success">this is the alert</l-alert>

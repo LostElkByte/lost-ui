@@ -1,6 +1,6 @@
 <script setup>
-import { createMessage } from '@/components/Message/method'
-import LButton from '@/components/Button/Button.vue'
+import { createMessage } from 'lost-ui'
+
 const open = () => {
   createMessage({ message: 'hello world', showClose: true, duration: 0 })
 }
