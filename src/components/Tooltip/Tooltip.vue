@@ -24,6 +24,10 @@ import { debounce } from 'lodash-es'
 import { computed, onUnmounted, reactive, ref, watch } from 'vue'
 import type { TooltipEmits, TooltipInstance, TooltipProps } from './types'
 
+defineOptions({
+  name: 'LTooltip'
+})
+
 // 定义组件的 props，并设置默认值
 const props = withDefaults(defineProps<TooltipProps>(), {
   placement: 'top', // tooltip 的位置，默认为顶部
