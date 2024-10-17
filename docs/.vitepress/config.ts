@@ -7,7 +7,7 @@ export default defineConfig({
   base: '/lost-ui/',
   title: 'Lost-UI',
   description: '基于 Vue 3，面向设计师和开发者的组件库',
-  head: [['link', { rel: 'icon', href: '/base/favicon.ico' }]],
+  head: [['link', { rel: 'icon', href: '/lost-ui/favicon.ico' }]],
   vite: {
     plugins: [vueJsx() as any],
     resolve: {
