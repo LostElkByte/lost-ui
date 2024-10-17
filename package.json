@@ -40,11 +40,13 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@popperjs/core": "^2.11.8",
-    "@vitepress-demo-preview/component": "^2.3.2",
-    "@vitepress-demo-preview/plugin": "^1.2.3",
+    "lodash-es": "^4.17.21"
+  },
+  "peerDependencies": {
     "vue": "^3.4.29"
   },
   "devDependencies": {
+    "vue": "^3.4.29",
     "@rushstack/eslint-patch": "^1.8.0",
     "@tsconfig/node20": "^20.1.4",
     "@types/lodash-es": "^4.17.12",
@@ -59,7 +61,6 @@
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
     "jsdom": "^25.0.1",
-    "lodash-es": "^4.17.21",
     "move-file-cli": "^3.0.0",
     "npm-run-all2": "^6.2.0",
     "postcss-color-mix": "^1.1.0",
@@ -73,7 +74,9 @@
     "vite-plugin-dts": "^4.2.4",
     "vitepress": "^1.4.1",
     "vitest": "^2.1.2",
-    "vue-tsc": "^2.0.21"
+    "vue-tsc": "^2.0.21",
+    "@vitepress-demo-preview/component": "^2.3.2",
+    "@vitepress-demo-preview/plugin": "^1.2.3"
   },
   "config": {
     "commitizen": {
