@@ -25,7 +25,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import type { ButtonProps } from './types.ts'
+import type { ButtonProps } from './types'
 import Icon from '../Icon/Icon.vue'
 defineOptions({
   name: 'LButton'

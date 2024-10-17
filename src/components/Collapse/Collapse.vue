@@ -6,8 +6,8 @@
 
 <script lang="ts" setup>
 import { ref, provide, defineModel, watchEffect } from 'vue'
-import type { NameType, CollapseProps, CollapseEmits } from './types.ts'
-import { collapseContextKey } from './types.ts'
+import type { NameType, CollapseProps, CollapseEmits } from './types'
+import { collapseContextKey } from './types'
 
 defineOptions({
   name: 'LCollapse'

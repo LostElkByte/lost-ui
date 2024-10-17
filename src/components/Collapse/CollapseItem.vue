@@ -30,8 +30,8 @@
 <script lang="ts" setup>
 import { inject, computed } from 'vue'
 import Icon from '../Icon/Icon.vue'
-import type { CollapseItemProps } from './types.ts'
-import { collapseContextKey } from './types.ts'
+import type { CollapseItemProps } from './types'
+import { collapseContextKey } from './types'
 
 defineOptions({
   name: 'LCollapseItem'
