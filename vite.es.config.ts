@@ -12,7 +12,8 @@ export default defineConfig({
     vue(),
     vueJsx(),
     dts({
-      tsconfigPath: './tsconfig.build.json'
+      tsconfigPath: './tsconfig.build.json',
+      outDir: 'dist/types'
     })
   ],
   resolve: {
@@ -21,10 +22,12 @@ export default defineConfig({
     }
   },
   build: {
+    outDir: 'dist/es',
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
       name: 'LostUI',
-      fileName: 'lost-ui'
+      fileName: 'lost-ui',
+      formats: ['es']
     },
     rollupOptions: {
       // 确保外部化处理那些你不想打包进库的依赖
@@ -32,15 +35,10 @@ export default defineConfig({
         'vue',
         '@fortawesome/fontawesome-svg-core',
         '@fortawesome/free-solid-svg-icons',
-        '@fortawesome/vue-fontawesome'
+        '@fortawesome/vue-fontawesome',
+        '@popperjs/core'
       ],
-      output: {
-        exports: 'named',
-        // 在 UMD 构建模式下为这些外部化的依赖提供一个全局变量
-        globals: {
-          vue: 'Vue'
-        }
-      }
+      output: {}
     }
   }
 })
