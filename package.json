@@ -1,11 +1,11 @@
 {
   "name": "@lostelk/lost-ui",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.9",
   "private": false,
   "description": "A component library for Vue 3.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LostElkByte/lost-ui.git"
+    "url": "https://github.com/LostElkByte/lost-ui"
   },
   "keywords": [
     "vue",
@@ -27,13 +27,13 @@
   "sideEffects": [
     "dist/index.css"
   ],
-  "main": "./dist/umd/lost-ui.umd.cjs",
+  "main": "./dist/umd/lost-ui.umd.js",
   "module": "./dist/es/lost-ui.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
       "import": "./dist/es/lost-ui.js",
-      "require": "./dist/umd/lost-ui.umd.cjs",
+      "require": "./dist/umd/lost-ui.umd.js",
       "types": "./dist/types/index.d.ts"
     },
     "./dist/": {
@@ -55,7 +55,8 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "deploy": "npm run docs:build && gh-pages -d docs/.vitepress/dist"
+    "deploy": "npm run docs:build && gh-pages -d docs/.vitepress/dist",
+    "prepublishOnly": "npm run build"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",

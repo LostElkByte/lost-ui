@@ -35,7 +35,8 @@ export default defineConfig({
             return 'index.css'
           }
           return chunkInfo.name as string
-        }
+        },
+        entryFileNames: 'lost-ui.umd.js'
       }
     }
   }
