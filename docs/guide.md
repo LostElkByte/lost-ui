@@ -19,15 +19,15 @@ Lost UI目前还处于开发内测中。
 
 # NPM
 
-$ npm install lost-ui --save
+$ npm install @lostelk/lost-ui --save
 
 # Yarn
 
-$ yarn add lost-ui
+$ yarn add @lostelk/lost-ui
 
 # pnpm
 
-$ pnpm install lost-ui
+$ pnpm install @lostelk/lost-ui
 ```
 
 ### 浏览器直接引入
@@ -37,19 +37,17 @@ $ pnpm install lost-ui
 ```html
 <head>
   <!-- Import style -->
-  <link rel="stylesheet" href="//unpkg.com/lost-ui/dist/index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@lostelk/lost-ui/dist/index.css" />
   <!-- Import Vue 3 -->
-  <script src="//unpkg.com/vue@3"></script>
+  <script src="https://unpkg.com/vue@3"></script>
   <!-- Import component library -->
-  <script src="//unpkg.com/lost-ui"></script>
+  <script src="https://unpkg.com/@lostelk/lost-ui"></script>
 </head>
 ```
 
-#
+## 使用
 
 本节将介绍如何在项目中使用 Lost UI。
-
-## 使用
 
 ### 完整引入
 
@@ -58,14 +56,20 @@ $ pnpm install lost-ui
 ```ts
 // main.ts
 import { createApp } from 'vue'
-import LostUI from 'lost-ui'
-import 'lost-ui/dist/index.css'
+import LostUI from '@lostelk/lost-ui'
+import '@lostelk/lost-ui/dist/index.css'
 import App from './App.vue'
 
 const app = createApp(App)
 
 app.use(LostUI)
 app.mount('#app')
+```
+
+```vue
+<template>
+  <l-button>我是 LButton</l-button>
+</template>
 ```
 
 ### 按需导入
@@ -75,7 +79,7 @@ app.mount('#app')
 ```ts
 // main.ts
 import { createApp } from 'vue'
-import 'lost-ui/dist/index.css'
+import '@lostelk/lost-ui/dist/index.css'
 import App from './App.vue'
 
 const app = createApp(App)
@@ -83,14 +87,11 @@ const app = createApp(App)
 app.mount('#app')
 ```
 
-```ts
+```vue
 <template>
   <l-button>我是 LButton</l-button>
 </template>
 <script>
-  import { LButton } from 'lost-ui'
-  export default {
-    components: { LButton },
-  }
+import { LButton } from '@lostelk/lost-ui'
 </script>
 ```

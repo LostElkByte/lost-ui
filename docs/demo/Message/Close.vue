@@ -1,5 +1,5 @@
 <script setup>
-import { createMessage } from 'lost-ui'
+import { createMessage } from '@lostelk/lost-ui'
 
 const open = () => {
   createMessage({ message: 'hello world', showClose: true, duration: 0 })
