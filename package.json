@@ -64,7 +64,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@popperjs/core": "^2.11.8",
     "lodash-es": "^4.17.21",
-    "vue3-resizable": "1.0.0-alpha"
+    "vue3-resizable": "1.0.0-alpha.1"
   },
   "peerDependencies": {
     "vue": "^3.4.29"
