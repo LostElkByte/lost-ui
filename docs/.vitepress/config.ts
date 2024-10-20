@@ -25,8 +25,9 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '安装指南', link: '/guide' },
-      { text: '组件', link: '/components' }
+      { text: '主页', link: '/' },
+      { text: '快速安装', link: '/guide' },
+      { text: '文档示例', link: '/components/button' }
     ],
 
     sidebar: {

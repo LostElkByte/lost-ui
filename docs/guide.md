@@ -10,7 +10,7 @@ Lost UI目前还处于开发内测中。
 
 ## 安装
 
-### 使用包管理器
+#### 使用包管理器
 
 我们建议您使用包管理器（如 NPM、Yarn 或 pnpm）安装 Lost UI，然后您就可以使用打包工具，例如 Vite 或 webpack。
 
@@ -30,7 +30,7 @@ $ yarn add @lostelk/lost-ui
 $ pnpm install @lostelk/lost-ui
 ```
 
-### 浏览器直接引入
+#### 浏览器直接引入
 
 直接通过浏览器的 HTML 标签导入 Lost UI，然后就可以使用全局变量 LostUI 了。
 
@@ -49,7 +49,7 @@ $ pnpm install @lostelk/lost-ui
 
 本节将介绍如何在项目中使用 Lost UI。
 
-### 完整引入
+#### 完整引入
 
 如果你对打包后的文件大小不是很在乎，那么使用完整导入会更方便。
 
@@ -72,7 +72,7 @@ app.mount('#app')
 </template>
 ```
 
-### 按需导入
+#### 按需导入
 
 您需要手动导入要使用的组件。
 

@@ -4,7 +4,7 @@
       <div class="content">
         <img
           style="width: 100%; height: 100%"
-          src="https://api.lostelk.cn/files/806/serve?size=large"
+          src="https://api.lostelk.cn/files/776/serve?size=large"
           alt="示例图片"
         />
       </div>

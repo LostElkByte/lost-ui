@@ -4,15 +4,15 @@ layout: home
 
 hero:
   name: 'Lost-UI'
-  text: '基于 Vue 3，面向设计师和开发者的组件库'
-  tagline: 'Lost UI 仍在开发实验阶段'
+  text: '基于 Vue 3，面向设计师和开发者的组件库 🦌'
+  tagline: 'Lost UI 仍在开发实验阶段，欢迎关注和参与贡献！'
   actions:
     - theme: brand
-      text: '安装指南'
+      text: '快速安装'
       link: /guide
     - theme: alt
-      text: '组件'
-      link: /components
+      text: 'Demo 文档'
+      link: /components/button
 
 features:
   - title: '高性能'
