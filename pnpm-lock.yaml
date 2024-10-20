@@ -24,8 +24,8 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       vue3-resizable:
-        specifier: 1.0.0-alpha.2
-        version: 1.0.0-alpha.2(typescript@5.4.5)
+        specifier: 1.0.0-alpha.3
+        version: 1.0.0-alpha.3(markdown-it-container@3.0.0)(typescript@5.4.5)(vitepress@1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5))
     devDependencies:
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
@@ -2909,8 +2909,8 @@ packages:
     peerDependencies:
       typescript: '>=5.0.0'
 
-  vue3-resizable@1.0.0-alpha.2:
-    resolution: {integrity: sha512-PXqAQ33uDb/XztO4nWgwt3keT0tErOG9f41szrB2HMyRKlXYigu2k7/WMQo1DwW6NTQWPzjqC8KXhelTOqnKFg==}
+  vue3-resizable@1.0.0-alpha.3:
+    resolution: {integrity: sha512-awdTpWs2I6njbk7dHygyknj+PG1AYOwNEF2cjQAW6uMrkVjNpxEcuKEMdc8ZZocRzfPR+mgKYV69yjYowtgKcw==}
 
   vue@3.5.12:
     resolution: {integrity: sha512-CLVZtXtn2ItBIi/zHZ0Sg1Xkb7+PU32bJJ8Bmy7ts3jxXTcbfsEfBivFYYWz1Hur+lalqGAh65Coin0r+HRUfg==}
@@ -3851,10 +3851,23 @@ snapshots:
       vite: 5.4.8(@types/node@20.16.5)
       vue: 3.5.12(typescript@5.4.5)
 
+  '@vitepress-demo-preview/component@2.3.2(vitepress@1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5))(vue@3.5.12(typescript@5.4.5))':
+    dependencies:
+      vitepress: 1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5)
+      vue: 3.5.12(typescript@5.4.5)
+
   '@vitepress-demo-preview/component@2.3.2(vitepress@1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5))(vue@3.5.4(typescript@5.4.5))':
     dependencies:
       vitepress: 1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5)
       vue: 3.5.4(typescript@5.4.5)
+
+  '@vitepress-demo-preview/plugin@1.2.3(markdown-it-container@3.0.0)(vitepress@1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5))(vue@3.5.12(typescript@5.4.5))':
+    dependencies:
+      '@flypeng/tool': 5.5.4
+      markdown-it: 13.0.2
+      markdown-it-container: 3.0.0
+      vitepress: 1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5)
+      vue: 3.5.12(typescript@5.4.5)
 
   '@vitepress-demo-preview/plugin@1.2.3(markdown-it-container@3.0.0)(vitepress@1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5))(vue@3.5.4(typescript@5.4.5))':
     dependencies:
@@ -5989,12 +6002,16 @@ snapshots:
       semver: 7.6.3
       typescript: 5.4.5
 
-  vue3-resizable@1.0.0-alpha.2(typescript@5.4.5):
+  vue3-resizable@1.0.0-alpha.3(markdown-it-container@3.0.0)(typescript@5.4.5)(vitepress@1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5)):
     dependencies:
+      '@vitepress-demo-preview/component': 2.3.2(vitepress@1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5))(vue@3.5.12(typescript@5.4.5))
+      '@vitepress-demo-preview/plugin': 1.2.3(markdown-it-container@3.0.0)(vitepress@1.4.1(@algolia/client-search@4.24.0)(@types/node@20.16.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.4.5))(vue@3.5.12(typescript@5.4.5))
       any-touch: 2.2.0
       vue: 3.5.12(typescript@5.4.5)
     transitivePeerDependencies:
+      - markdown-it-container
       - typescript
+      - vitepress
 
   vue@3.5.12(typescript@5.4.5):
     dependencies:
