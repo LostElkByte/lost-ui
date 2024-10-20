@@ -32,6 +32,8 @@ import LMessage, {
   closeAll as closeMessageAll
 } from '../../../src/components/Message'
 import LTooltip from '../../../src/components/Tooltip'
+import { LResize } from 'vue3-resizable'
+import 'vue3-resizable/dist/index.css'
 
 // 将 FontAwesome 的固态图标添加到图标库中
 library.add(fas)
@@ -52,6 +54,7 @@ export default {
     app.component('LDropdown', LDropdown)
     app.component('LMessage', LMessage)
     app.component('LTooltip', LTooltip)
+    app.component('LResize', LResize)
     app.config.globalProperties.createMessage = createMessage
     app.config.globalProperties.closeMessageAll = closeMessageAll
   }
