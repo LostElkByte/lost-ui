@@ -24,8 +24,8 @@ importers:
         specifier: ^4.17.21
         version: 4.17.21
       vue3-resizable:
-        specifier: 1.0.0-alpha.1
-        version: 1.0.0-alpha.1(typescript@5.4.5)
+        specifier: 1.0.0-alpha.2
+        version: 1.0.0-alpha.2(typescript@5.4.5)
     devDependencies:
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
@@ -2909,8 +2909,8 @@ packages:
     peerDependencies:
       typescript: '>=5.0.0'
 
-  vue3-resizable@1.0.0-alpha.1:
-    resolution: {integrity: sha512-/P6JakAFaGF6MSYTiQp/W1UImYdRjXM7yYcN2hPbRSjc0FNYlpcTu2RbnWnx6E7JU7qku6YnhvJnEmaWjnwMsA==}
+  vue3-resizable@1.0.0-alpha.2:
+    resolution: {integrity: sha512-PXqAQ33uDb/XztO4nWgwt3keT0tErOG9f41szrB2HMyRKlXYigu2k7/WMQo1DwW6NTQWPzjqC8KXhelTOqnKFg==}
 
   vue@3.5.12:
     resolution: {integrity: sha512-CLVZtXtn2ItBIi/zHZ0Sg1Xkb7+PU32bJJ8Bmy7ts3jxXTcbfsEfBivFYYWz1Hur+lalqGAh65Coin0r+HRUfg==}
@@ -5989,7 +5989,7 @@ snapshots:
       semver: 7.6.3
       typescript: 5.4.5
 
-  vue3-resizable@1.0.0-alpha.1(typescript@5.4.5):
+  vue3-resizable@1.0.0-alpha.2(typescript@5.4.5):
     dependencies:
       any-touch: 2.2.0
       vue: 3.5.12(typescript@5.4.5)
