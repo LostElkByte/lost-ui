@@ -7,6 +7,8 @@
 
   --component-preview-bg: var(--vp-code-block-bg);
   --component-preview-soft: var(--vp-code-block-bg-light);
+  --vp-c-brand-1: #409eff;
+  --vp-button-brand-bg: #409eff;
 }
 
 body {

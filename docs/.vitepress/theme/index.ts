@@ -1,6 +1,9 @@
 // 引入 VitePress 默认主题
 import DefaultTheme from 'vitepress/theme'
 
+// 引入自定义样式
+import './custom.css'
+
 // 从 '@vitepress-demo-preview/component' 包中导入各个 UI 框架的容器组件
 import {
   AntDesignContainer,
@@ -17,9 +20,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 
 // 引入项目中的全局样式
 import '../../../src/styles/index.css'
-
-// 引入自定义样式
-import './custom.css'
 
 // 引入组件
 import LButton from '../../../src/components/Button'
