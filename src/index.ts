@@ -7,10 +7,22 @@ import LDropdown from '@/components/Dropdown'
 import LIcon from '@/components/Icon'
 import LMessage, { createMessage, closeAll as closeMessageAll } from '@/components/Message'
 import LTooltip from '@/components/Tooltip'
+import { LResize } from 'vue3-resizable'
 import './styles/index.css'
+import 'vue3-resizable/dist/index.css'
 
 library.add(fas)
-const components = [LButton, LAlert, LCollapse, LCollapseItem, LDropdown, LIcon, LMessage, LTooltip]
+const components = [
+  LButton,
+  LAlert,
+  LCollapse,
+  LCollapseItem,
+  LDropdown,
+  LIcon,
+  LMessage,
+  LTooltip,
+  LResize
+]
 const install = (app: any) => {
   components.map((component) => {
     app.component(component.name, component)
@@ -26,6 +38,7 @@ export {
   LIcon,
   LMessage,
   LTooltip,
+  LResize,
   createMessage,
   closeMessageAll
 }

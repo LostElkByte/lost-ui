@@ -36,7 +36,8 @@ export default defineConfig({
         '@fortawesome/fontawesome-svg-core',
         '@fortawesome/free-solid-svg-icons',
         '@fortawesome/vue-fontawesome',
-        '@popperjs/core'
+        '@popperjs/core',
+        'vue3-resizable'
       ],
       output: {
         assetFileNames(chunkInfo) {

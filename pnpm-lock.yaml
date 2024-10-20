@@ -23,6 +23,9 @@ importers:
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
+      vue3-resizable:
+        specifier: 1.0.0-alpha
+        version: 1.0.0-alpha(typescript@5.4.5)
     devDependencies:
       '@rushstack/eslint-patch':
         specifier: ^1.8.0
@@ -191,6 +194,39 @@ packages:
   '@ampproject/remapping@2.3.0':
     resolution: {integrity: sha512-30iZtAPgz+LTIYoeivqYo853f02jBYSd5uGnGpkFV0M3xOt9aN73erkgYAmZU43x4VfqcnLxW9Kpg3R5LC4YYw==}
     engines: {node: '>=6.0.0'}
+
+  '@any-touch/compute@2.2.0':
+    resolution: {integrity: sha512-hrw74b/cVT8SmiKFLValmllajw+bBvTa5iUwIXFVVIJM9T3tO15zZC2QbjVz8Uwi6XjH932RDUILGMs2TNvyQg==}
+
+  '@any-touch/core@2.2.0':
+    resolution: {integrity: sha512-xMHAA5aLCatFto+4fQWyE4YAsyN/LsXS4mnYuVpqFYoNz8dl5FsB/TIyb9JrqMKLYMxxcZ9joqR8gDprH1lwBw==}
+
+  '@any-touch/doubletap@2.2.0':
+    resolution: {integrity: sha512-g/Aj/4K2EocalpyKWoUL2HyxI+oJyO+6UwJvEvSpOTdjQXLnK155C0JhxC4pBAJS3yIwFXwU+/2ecagUABWTug==}
+
+  '@any-touch/pan@2.2.0':
+    resolution: {integrity: sha512-uMkCHbTm5qWji/FvhumP9n1ZCkPU7hy864g+ZhoWZ0OWAmn7s/TKRo4UqPBfqEPUMV6obGZvatrrgBLWT6J57w==}
+
+  '@any-touch/pinch@2.2.0':
+    resolution: {integrity: sha512-TVLbjvdH2/lKUDSEOqPUi7VoXqAKn1MtsVNHNedpY//vv39Y9+OTfG/6qQoaH8ZS3g/C8cLyoGDu8W9P95b9zQ==}
+
+  '@any-touch/press@2.2.0':
+    resolution: {integrity: sha512-+iIxniO6wrCh621fScGXARgjCxjn/XpqfwxHd7Pq7MVJl51sFrQu1pxWOk6j/I+FA3YfPU9kInO2H45BADWBXw==}
+
+  '@any-touch/rotate@2.2.0':
+    resolution: {integrity: sha512-tRph/mSYWXFtrwwtpNzuIcjlyXh1sQvJf/XGJCBVEmi+ePWZRTIc7OV9fLOVZSfXui/9Z+9UYSTSZHJw31skyg==}
+
+  '@any-touch/shared@2.2.0':
+    resolution: {integrity: sha512-2n1zWaATi/3osr/dkIUq5O7aSffKUsTM4DsIbPMW1VEO77v/rX2HkLoxt2Djzj5eCGh7An55Vw8NeA33kTTSRA==}
+
+  '@any-touch/swipe@2.2.0':
+    resolution: {integrity: sha512-AzHKVuUpZzIaFUq4D4jXSaqfSyKEM/ipqnwKv4439z7R7OKWD5n8sI3T5jDDGKaUe+IIoOYVOgmwPDVCflfw4Q==}
+
+  '@any-touch/tap@2.2.0':
+    resolution: {integrity: sha512-x+FIa/0iaKdXI6aKosThWmuGgPYX9U+QFO3Xp1xBjIMmKevDBOqVzFFFDMj8BU0fuY0aU8a+UfVKpMnar6Y87Q==}
+
+  '@any-touch/vector@2.2.0':
+    resolution: {integrity: sha512-t7pGYegIDCJl+swwsohZHZKmF71ZMt+hjwVEyhaEP6nQhcx6S7zulxnRxNp1t8s+c/JdK02Q89HnzQ4Ukg4+IA==}
 
   '@babel/code-frame@7.24.7':
     resolution: {integrity: sha512-BcYH1CVJBO9tvyIZ2jVeXgSIMvGZ2FDRvDdOIVQyuklNKSsx+eppDEBq/g47Ayw+RqNFE+URvOShmf+f/qwAlA==}
@@ -620,46 +656,55 @@ packages:
     resolution: {integrity: sha512-btVgIsCjuYFKUjopPoWiDqmoUXQDiW2A4C3Mtmp5vACm7/GnyuprqIDPNczeyR5W8rTXEbkmrJux7cJmD99D2g==}
     cpu: [arm]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm-musleabihf@4.21.3':
     resolution: {integrity: sha512-zmjbSphplZlau6ZTkxd3+NMtE4UKVy7U4aVFMmHcgO5CUbw17ZP6QCgyxhzGaU/wFFdTfiojjbLG3/0p9HhAqA==}
     cpu: [arm]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-arm64-gnu@4.21.3':
     resolution: {integrity: sha512-nSZfcZtAnQPRZmUkUQwZq2OjQciR6tEoJaZVFvLHsj0MF6QhNMg0fQ6mUOsiCUpTqxTx0/O6gX0V/nYc7LrgPw==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.21.3':
     resolution: {integrity: sha512-MnvSPGO8KJXIMGlQDYfvYS3IosFN2rKsvxRpPO2l2cum+Z3exiExLwVU+GExL96pn8IP+GdH8Tz70EpBhO0sIQ==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-powerpc64le-gnu@4.21.3':
     resolution: {integrity: sha512-+W+p/9QNDr2vE2AXU0qIy0qQE75E8RTwTwgqS2G5CRQ11vzq0tbnfBd6brWhS9bCRjAjepJe2fvvkvS3dno+iw==}
     cpu: [ppc64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-riscv64-gnu@4.21.3':
     resolution: {integrity: sha512-yXH6K6KfqGXaxHrtr+Uoy+JpNlUlI46BKVyonGiaD74ravdnF9BUNC+vV+SIuB96hUMGShhKV693rF9QDfO6nQ==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-s390x-gnu@4.21.3':
     resolution: {integrity: sha512-R8cwY9wcnApN/KDYWTH4gV/ypvy9yZUHlbJvfaiXSB48JO3KpwSpjOGqO4jnGkLDSk1hgjYkTbTt6Q7uvPf8eg==}
     cpu: [s390x]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.21.3':
     resolution: {integrity: sha512-kZPbX/NOPh0vhS5sI+dR8L1bU2cSO9FgxwM8r7wHzGydzfSjLRCFAT87GR5U9scj2rhzN3JPYVC7NoBbl4FZ0g==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.21.3':
     resolution: {integrity: sha512-S0Yq+xA1VEH66uiMNhijsWAafffydd2X5b77eLHfRmfLsRSpbiAWiRHV6DEpz6aOToPsgid7TI9rGd6zB1rhbg==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.21.3':
     resolution: {integrity: sha512-9isNzeL34yquCPyerog+IMCNxKR8XYmGd0tHSV+OVx0TmE0aJOo9uw4fZfUuk2qxobP5sug6vNdZR6u7Mw7Q+Q==}
@@ -1150,6 +1195,12 @@ packages:
   ansi-styles@6.2.1:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
+
+  any-event@2.2.0:
+    resolution: {integrity: sha512-PB4sEiVUjL+5mLmwlAGYdI5/1ouckapxS6+RPIvrGXv9XTMav7M3k3rR/f9fwAR+e2608CTR3FOR5HrOEYTtKA==}
+
+  any-touch@2.2.0:
+    resolution: {integrity: sha512-UnqDiRHefksz5K/Vnv8NAJX1xrQvA8Cpe4auwMs/EyI3rJlW3uo8eGYcLcU2AOBmwxBQh/aTtFondkkPmi1vcg==}
 
   argparse@1.0.10:
     resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
@@ -2858,6 +2909,9 @@ packages:
     peerDependencies:
       typescript: '>=5.0.0'
 
+  vue3-resizable@1.0.0-alpha:
+    resolution: {integrity: sha512-G/05Kvl2+dhQPJ1nxDEm4YAmRdCM8LzU4ne3khWo4p976euUd1sxMlAv4xiGOS2Llbn/nZqQ7cLBBdk3UPRW2Q==}
+
   vue@3.5.12:
     resolution: {integrity: sha512-CLVZtXtn2ItBIi/zHZ0Sg1Xkb7+PU32bJJ8Bmy7ts3jxXTcbfsEfBivFYYWz1Hur+lalqGAh65Coin0r+HRUfg==}
     peerDependencies:
@@ -3069,6 +3123,58 @@ snapshots:
     dependencies:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
+
+  '@any-touch/compute@2.2.0':
+    dependencies:
+      '@any-touch/shared': 2.2.0
+      '@any-touch/vector': 2.2.0
+      tslib: 2.7.0
+
+  '@any-touch/core@2.2.0':
+    dependencies:
+      '@any-touch/shared': 2.2.0
+      any-event: 2.2.0
+
+  '@any-touch/doubletap@2.2.0':
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+      '@any-touch/vector': 2.2.0
+
+  '@any-touch/pan@2.2.0':
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+
+  '@any-touch/pinch@2.2.0':
+    dependencies:
+      '@any-touch/compute': 2.2.0
+
+  '@any-touch/press@2.2.0':
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+
+  '@any-touch/rotate@2.2.0':
+    dependencies:
+      '@any-touch/compute': 2.2.0
+
+  '@any-touch/shared@2.2.0': {}
+
+  '@any-touch/swipe@2.2.0':
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+
+  '@any-touch/tap@2.2.0':
+    dependencies:
+      '@any-touch/compute': 2.2.0
+      '@any-touch/shared': 2.2.0
+      '@any-touch/vector': 2.2.0
+
+  '@any-touch/vector@2.2.0':
+    dependencies:
+      '@any-touch/shared': 2.2.0
 
   '@babel/code-frame@7.24.7':
     dependencies:
@@ -4126,6 +4232,23 @@ snapshots:
       color-convert: 2.0.1
 
   ansi-styles@6.2.1: {}
+
+  any-event@2.2.0:
+    dependencies:
+      tslib: 2.7.0
+
+  any-touch@2.2.0:
+    dependencies:
+      '@any-touch/core': 2.2.0
+      '@any-touch/doubletap': 2.2.0
+      '@any-touch/pan': 2.2.0
+      '@any-touch/pinch': 2.2.0
+      '@any-touch/press': 2.2.0
+      '@any-touch/rotate': 2.2.0
+      '@any-touch/swipe': 2.2.0
+      '@any-touch/tap': 2.2.0
+      any-event: 2.2.0
+      tslib: 2.7.0
 
   argparse@1.0.10:
     dependencies:
@@ -5865,6 +5988,13 @@ snapshots:
       '@vue/language-core': 2.1.6(typescript@5.4.5)
       semver: 7.6.3
       typescript: 5.4.5
+
+  vue3-resizable@1.0.0-alpha(typescript@5.4.5):
+    dependencies:
+      any-touch: 2.2.0
+      vue: 3.5.12(typescript@5.4.5)
+    transitivePeerDependencies:
+      - typescript
 
   vue@3.5.12(typescript@5.4.5):
     dependencies:
